@@ -1,6 +1,5 @@
 # Lisbon to Oerias (Thursday March 22nd) #
 
-
 ![*Onda (1912) Antonio Carneiro*](../images/Onda.jpg "Onde - Where")
 
 The sky is clear and blue. The first day I have seen like this in weeks. A good day to start a journey I think. I wander along the wall of the marina to talk to Luís, who is operating the sluices. Seeing the electricity adaptor in my hands he knows that I have come for my deposit. Five minutes he tells me. We chat about the weather in Portuguese while we wait for the sluices to open. We walk back together and he opens reception.
@@ -17,13 +16,6 @@ The wind has picked up more and Kite is feeling a little overpowered so I start 
 
 I enter the harbour stressed and my mooring to the fuel pontoon is not exactly ideal. I come in what I think is too slowly add some throttle and then overcook things and crunch Kite's sides to the berth. To make matters worse, the fenders ride up and the hull gets a little scratch. Hopefully that will polish out. Filling up with diesel and getting to my berth proves to be more successful though. It's lunchtime so I sit down to eat. As I finish a wave of tiredness hits me and I climb into the forward berth for a lie down. As I feel myself drifting off to sleep I reflect on the lessons I have learned from today's sail. There are a few things on Kite that need looking at but my main worry is me. If I'm this tired after a few hours sail am I capable of making this journey? 
 
-
-
-
-
-
-
-
-
 ![](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](href="http://creativecommons.org/licenses/by-nc-sa/4.0/).
+
