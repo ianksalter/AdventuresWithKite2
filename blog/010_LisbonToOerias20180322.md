@@ -18,4 +18,3 @@ I enter the harbour stressed and my mooring to the fuel pontoon is not exactly i
 
 ![](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](href="http://creativecommons.org/licenses/by-nc-sa/4.0/).
-

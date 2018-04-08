@@ -17,4 +17,8 @@ The source for this work is available on GitHub at [https://github.com/ianksalte
 
 ## Oerias ##
 
-* **What a Freedom:** Original image by Ilya Repin and sourced from [Wikiart](https://www.wikiart.org/) as a Public Domain image. 
+* **What a Freedom:** Original image by Ilya Repin and sourced from [Wikiart](https://www.wikiart.org/) as a Public Domain image.  
+
+## Oerias to Sines ##
+
+* **Glittering Sea:** Original image by Hiroshi Yoshida and sourced from [Wikiart](https://www.wikiart.org/) as a Public Domain image. 
