@@ -21,4 +21,8 @@ The source for this work is available on GitHub at [https://github.com/ianksalte
 
 ## Oerias to Sines ##
 
-* **Glittering Sea:** Original image by Hiroshi Yoshida and sourced from [Wikiart](https://www.wikiart.org/) as a Public Domain image. 
+* **Glittering Sea:** Original image by Hiroshi Yoshida and sourced from [Wikiart](https://www.wikiart.org/) as a Public Domain image.  
+
+## Sines to Lagos ##
+
+* **Sagres Sunrise:** Original image by the author. 
