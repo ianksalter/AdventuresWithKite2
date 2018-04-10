@@ -25,4 +25,14 @@ The source for this work is available on GitHub at [https://github.com/ianksalte
 
 ## Sines to Lagos ##
 
-* **Sagres Sunrise:** Original image by the author. 
+* **Sagres Sunrise:** Original image by the author.  
+
+## Lagos ##
+
+* **The Drinker:** Original image by Umberto Boccioni and sourced from [Wikiart](https://www.wikiart.org/) as a Public Domain image.
+
+* **My Two Equilibria:** Original image by the author.
+
+## Lagos to Vilamoura ##
+
+* **Sailing:** Original image by Thomas Eakins and sourced from [Wikiart](https://www.wikiart.org/) as a Public Domain image. 
