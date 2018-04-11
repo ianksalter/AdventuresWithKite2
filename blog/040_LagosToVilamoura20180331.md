@@ -2,7 +2,7 @@
 
 ![* Sailing (1875) Thomas Eakins *](../images/SailingEakins.jpg "Sailing")
 
-It's Saturday we rise early as we have a sail ahead of us. Since we spent most of Friday hungover, there is loads of work to do. The main task is to put the battens into the replacement mainsail. We get about this task quickly and are almost done except I can't find the alum key for the bolt that secures the last and biggest batten. We search high and low for the key but of it there is no sign. We add a visit to the chandlers to the todo list and head to the marina office.
+It's Saturday. We rise early as we have a sail ahead of us. Since we spent most of Friday hungover, there is loads of work to do. The main task is to put the battens into the replacement mainsail. We get about this task quickly and are almost done except I can't find the alum key for the bolt that secures the last and biggest batten. We search high and low for the key but of it there is no sign. We add a visit to the chandlers to the todo list and head to the marina office.
 
 Once there I need to pay for an extra day and, as they have joined as crew, the Riffraff need to show their passports. This done we head into the supermarket to buy some pizzas for our sail, then head round the back of the fishing harbour to the chandlers where I pick up a new and expensive set of alum keys. We get back to the boat and get the batten secured. We rush round stowing items and getting things ready. I take off the instrument covers and lift the removable center of the cockpit table, so that I can stash them for the journey and there, of course, is the missing alum key. Never mind, I think, it is always good to have spares.
 
