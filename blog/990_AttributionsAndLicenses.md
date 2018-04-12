@@ -35,4 +35,12 @@ The source for this work is available on GitHub at [https://github.com/ianksalte
 
 ## Lagos to Vilamoura ##
 
-* **Sailing:** Original image by Thomas Eakins and sourced from [Wikiart](https://www.wikiart.org/) as a Public Domain image. 
+* **Sailing:** Original image by Thomas Eakins and sourced from [Wikiart](https://www.wikiart.org/) as a Public Domain image.
+
+## Vilamoura ##
+
+* **Fashion Store:** Original image by August Macke and sourced from [Wikiart](https://www.wikiart.org/) as a Public Domain image. 
+
+## Vilamoura to Vila Real de Santo Antonio ##
+
+* **The Sea with a Sailing Ship:** Original image by Arkhip Kuindzhi and sourced from [Wikiart](https://www.wikiart.org/) as a Public Domain image.   
