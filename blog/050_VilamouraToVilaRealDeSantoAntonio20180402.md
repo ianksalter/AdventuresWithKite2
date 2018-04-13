@@ -24,7 +24,7 @@ While Raff sleeps in his cabin, Riff takes on his usual role of monitoring the s
 
 Decartes found a starting point for his philosophy by doubting perception until he came up with a single principal, his famous:
 
-* **"Cogito ergo sum" - "I think therefore I am" **
+> *"Cogito ergo sum" - "I think therefore I am"*
 
 From this idea, that he is a thinking thing, he builds an entire philosophy based around deduction rather that perception. It is from Decartes that we get the [Subject-Object distinction](https://en.wikipedia.org/wiki/Subject_(philosophy)) that makes sailing a modern boat like Kite possible. We sailors are the subjects, the unique consciousnesses, who interact with our objects, the boat and the environment. The objects have attributes. For Kite these attributes are things like:
 
