@@ -43,4 +43,8 @@ The source for this work is available on GitHub at [https://github.com/ianksalte
 
 ## Vilamoura to Vila Real de Santo Antonio ##
 
-* **The Sea with a Sailing Ship:** Original image by Arkhip Kuindzhi and sourced from [Wikiart](https://www.wikiart.org/) as a Public Domain image.   
+* **The Sea with a Sailing Ship:** Original image by Arkhip Kuindzhi and sourced from [Wikiart](https://www.wikiart.org/) as a Public Domain image. 
+
+## Vila Real de Santo Antonio Part 1 ##
+
+* **Four People Sharing A Meal:** Original image by Vincent van Gogh and sourced from [Wikiart](https://www.wikiart.org/) as a Public Domain image.   
