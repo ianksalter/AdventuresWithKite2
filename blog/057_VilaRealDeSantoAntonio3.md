@@ -14,7 +14,7 @@ As I walk back to the boat with my clean washing slung across my shoulder I reca
 
 > *"been influenced by too much Marxist propaganda"* 
 
-Later that day, at the gates to Oeiras marina, I encountered Jorge and struck up a conversation, initially in the local language. It turns out that he had lived in UK and, as he spoke better English than I did the Portuguese, we switched to my mother tongue. I learnt that he lived on his boat in the marina and that he moved to the UK in 1974 because of the political situation. 
+Later that day, at the gates to Oeiras marina, I encountered Jorge and struck up a conversation, initially in the local language. It turns out that he had lived in UK and, as he spoke better English than I did the Portuguese, we switched to my mother tongue. I learnt that he was in his eighties, lived on his boat in the marina and that he moved to the UK in 1974 because of the political situation. 
 
 > *"They called me a fascist!"* 
 
