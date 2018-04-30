@@ -51,4 +51,12 @@ The source for this work is available on GitHub at [https://github.com/ianksalte
 
 ## Vila Real de Santo Antonio Part 2 ##
 
-* **Ambiguous Figures:** Original image by Max Ernst and sourced from [Wikiart](https://www.wikiart.org/) as a US Public Domain image.   
+* **Ambiguous Figures:** Original image by Max Ernst and sourced from [Wikiart](https://www.wikiart.org/) as a US Public Domain image. 
+
+## Vila Real de Santo Antonio Part 3 ##
+
+* **The tendency of aesthetic idealism :** Original image by Julius Evola and sourced from [Wikiart](https://www.wikiart.org/) as a US Public Domain image.
+
+* **Freedom and Equality** Original image by the author.
+
+  
