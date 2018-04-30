@@ -28,7 +28,7 @@ My father Ray was a life long trade unionist and socialist who grew up in the Ne
 
 > *"This, lads, is the Lucknow of Labour, and I myself, looking to the horizon, can see a silver gleam - not of bayonets to be imbrued in a brother's blood, but the gleam of the full round orb of the dockers' tanner."*
 
-The second world war had a dramatic effect on my parents. My father was conscripted into the Royal Navy and spent five years on a destroyer. My mother gave up acting and built tanks for the war effort. She never returned to the stage. They were were rewarded for their sacrifices when the 1945 general election returned the [Attlee Labour Government](https://en.wikipedia.org/wiki/Attlee_ministry) that created the [National Healh Service](https://en.wikipedia.org/wiki/Attlee_ministry#Health) and the [Welfare State](https://en.wikipedia.org/wiki/Attlee_ministry#Welfare).  
+The second world war had a dramatic effect on my parents. My father was conscripted into the Royal Navy and spent five years on a destroyer. My mother gave up acting and built tanks for the war effort. She never returned to the stage. They were were rewarded for their sacrifices when the 1945 general election returned the [Attlee Labour Government](https://en.wikipedia.org/wiki/Attlee_ministry) that created the [National Health Service](https://en.wikipedia.org/wiki/Attlee_ministry#Health) and the [Welfare State](https://en.wikipedia.org/wiki/Attlee_ministry#Welfare).  
 
 I put my pad to one side and stretch out in the forward cabin. I am about to get up but then think there is a little more I should disclose about my childhood. I was never a [boy scout](http://scouts.org.uk/home/), an organisation with the [motto](https://en.wikipedia.org/wiki/Scout_Motto):
 
