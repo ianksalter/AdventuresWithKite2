@@ -17,7 +17,12 @@ test_that('incomeTax function produces expected values',{
   expect_equal(incomeTax(5000),0)
   expect_equal(incomeTax(21000),2000)
   # Test data from calculator here: http://iknowtax.com/2016/
-  expect_true(abs(incomeTax(24000)-2600) < 1)
+  expect_equal(incomeTax(24000),2600)
+  expect_equal(incomeTax(43000)-6400)
+  expect_equal(incomeTax(55000)-11200)
+  expect_equal(incomeTax(120000)-41200)
+  expect_equal(incomeTax(200000)-76100)
+  expect_equal(incomeTax(500000)-211100)
 })
 
 test_that('incomeNetOfIncomeTax function produces expected values',{

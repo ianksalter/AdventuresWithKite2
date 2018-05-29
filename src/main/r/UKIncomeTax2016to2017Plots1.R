@@ -8,54 +8,67 @@ source("src/main/r/UKIncomeTax2016to2017.r")
 #Import plotting library
 library(ggplot2)
 
-#Generate the UK Income Tax Data Frame to Illustrate Personal Allowances
-ukIncomeTaxDF <- ukIncomeTaxDataFrame(to=130001,by=1000)
+#Generate the UK Income Tax Data Frame
+ukIncomeTaxDF <- ukIncomeTaxDataFrame(to=160001,by=1000)
 
 # Create Personal Allowance Plot
 # Set up plot axis
-xAxisBreaks <- c(0,1,2,3,4,5,6,7,8,9,10,11,12)*10000
-yAxisBreaks <- c(0,1,2,3,4,5,6,7,8,9,10,11)*1000
+xAxisBreaks <- seq(0,160000,20000)
+yAxisBreaks <- seq(0,20000,1000)
 # create plot
 ggplot(ukIncomeTaxDF) + 
   geom_line(aes(grossIncome,personalAllowance)) +
   labs(x="Gross Income",y="Allowance") +
-  coord_cartesian(xlim=c(0,130700),ylim=c(0,11500),expand = FALSE) + 
+  coord_cartesian(xlim=c(0,160700),ylim=c(0,20500),expand = FALSE) + 
   scale_x_continuous(breaks = xAxisBreaks) + 
   scale_y_continuous(breaks = yAxisBreaks) +
-  annotate("text",x=110000,y=11000,label="Personal Allowance")
+  annotate("text",x=113000,y=11000,label="Personal Allowance")
 ggsave("plots/PersonalAllowance.png")
 
-#Generate the UK Income Tax Data Frame
-ukIncomeTaxDF <- ukIncomeTaxDataFrame()
 
 # Create graph to plot income tax
 # Set up plot axis
-xAxisBreaks <- c(0,1,2,3,4,5)*10000
-yAxisBreaks <- c(0,1,2,3,4,5,6,7,8,9,10)*5000
+yAxisBreaks <-  seq(0,70000,10000)
 # create plot
 ggplot(ukIncomeTaxDF) + 
   geom_line(aes(grossIncome,incomeTax)) +
   labs(x="Gross Income",y="Tax") +
-  coord_cartesian(xlim=c(0,50700),ylim=c(0,50500),expand = FALSE) + 
+  coord_cartesian(xlim=c(0,160700),ylim=c(0,70500),expand = FALSE) + 
   scale_x_continuous(breaks = xAxisBreaks) + 
   scale_y_continuous(breaks = yAxisBreaks) +
-  annotate("text",x=48000,y=10500,label="Income Tax")
-ggsave("plots/Income Tax.png")
-
+  annotate("text",x=152000,y=60500,label="Income Tax")
+ggsave("plots/IncomeTax.png")
 
 # Create graph to plot income net of income tax
 # Set up plot axis
-xAxisBreaks <- c(0,1,2,3,4,5)*10000
-yAxisBreaks <- c(0,1,2,3,4,5,6,7,8,9,10)*5000
+yAxisBreaks <-  seq(0,110000,10000)
 # create plot
 ggplot(ukIncomeTaxDF) + 
   geom_line(aes(grossIncome,incomeNetOfIncomeTax)) +
   labs(x="Gross Income",y="Net Income") +
-  coord_cartesian(xlim=c(0,50700),ylim=c(0,50500),expand = FALSE) + 
+  coord_cartesian(xlim=c(0,160700),ylim=c(0,110500),expand = FALSE) + 
   scale_x_continuous(breaks = xAxisBreaks) + 
   scale_y_continuous(breaks = yAxisBreaks) +
-  annotate("text",x=45000,y=42500,label="Income Net of Income Tax")
-ggsave("plots/Income Net of Income Tax.png")
+  annotate("text",x=145000,y=104500,label="Income Net of Income Tax")
+ggsave("plots/IncomeNetofIncomeTax.png")
+
+
+# Create graph to plot income net of income tax vs no intervention
+# Set up plot axis
+yAxisBreaks <-  seq(0,160000,20000)
+# create plot
+ggplot(ukIncomeTaxDF) + 
+  geom_line(aes(grossIncome,incomeNetOfIncomeTax)) +
+  geom_line(aes(grossIncome,grossIncome),linetype="dotted") +
+  geom_ribbon(aes(x=grossIncome,ymin=incomeNetOfIncomeTax,ymax=grossIncome),fill="grey80") +
+  labs(x="Gross Income",y="Net Income") +
+  coord_cartesian(xlim=c(0,160700),ylim=c(0,160500),expand = FALSE) + 
+  scale_x_continuous(breaks = xAxisBreaks) + 
+  scale_y_continuous(breaks = yAxisBreaks) +
+  annotate("text",x=145000,y=104500,label="Income Net of Income Tax") +
+  annotate("text",x=145000,y=156000,label="No Intervention")
+ggsave("plots/IncomeNetofIncomeTaxVsNoIntervention.png")
+
 
 # Generate a flat tax incomes data frame
 incomeNetOfNationalInsuranceVector <- sapply(incomes,incomeNetOfNationalInsurance)
