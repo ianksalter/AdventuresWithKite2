@@ -136,13 +136,14 @@ incomeNetOfNationalInsurance <- function(income){
 #'
 #' This function creates a data frame with the following columns
 #' 1) grossIncome
-#' 2) incomeTax
-#' 3) incomeNetOfIncomeTax
-#' 4) nationalInsurance
-#' 5) incomeNetOfNationalInsurance
-#' 6) incomeNetOfNationalInsuranceAndIncomeTax
-#' 7) taxCredits
-#' 8) netIncome
+#' 2) personal allowance
+#' 3) incomeTax
+#' 4) incomeNetOfIncomeTax
+#' 5) nationalInsurance
+#' 6) incomeNetOfNationalInsurance
+#' 7) incomeNetOfNationalInsuranceAndIncomeTax
+#' 8) taxCredits
+#' 9) netIncome
 #' @param from The starting point for the gross income vector of the data frame. Defaults to 1.
 #' @param to The ending point of the gross income vector of the data frame. Defaults to 50001.
 #' @param by The increments of the gross income vector of the data frame. Defaukts to 1000.)
@@ -152,6 +153,7 @@ incomeNetOfNationalInsurance <- function(income){
 #' ukIncomeTaxDataFrame()
 ukIncomeTaxDataFrame <- function(from=1,to=50001,by=1000) {
   grossIncome <- seq(from,to,by)
+  personalAllowance <- sapply(grossIncome,personalAllowance)
   incomeTax <- sapply(grossIncome,incomeTax)
   incomeNetOfIncomeTax <- sapply(grossIncome,incomeNetOfIncomeTax)
   nationalInsurance <- grossIncome
@@ -160,6 +162,7 @@ ukIncomeTaxDataFrame <- function(from=1,to=50001,by=1000) {
   taxCredits <- grossIncome
   netIncome <- grossIncome
   data.frame(grossIncome,
+             personalAllowance,
              incomeTax,
              incomeNetOfIncomeTax,
              nationalInsurance,

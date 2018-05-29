@@ -3,11 +3,30 @@
 # Reference the tax functions defined in the file
 source("src/main/r/UKIncomeTax2016to2017.r")
 
-#Generate the UK Income Tax Data Frame
-ukIncomeTaxDF <- ukIncomeTaxDataFrame()
+
 
 #Import plotting library
 library(ggplot2)
+
+#Generate the UK Income Tax Data Frame to Illustrate Personal Allowances
+ukIncomeTaxDF <- ukIncomeTaxDataFrame(to=130001,by=1000)
+
+# Create Personal Allowance Plot
+# Set up plot axis
+xAxisBreaks <- c(0,1,2,3,4,5,6,7,8,9,10,11,12)*10000
+yAxisBreaks <- c(0,1,2,3,4,5,6,7,8,9,10,11)*1000
+# create plot
+ggplot(ukIncomeTaxDF) + 
+  geom_line(aes(grossIncome,personalAllowance)) +
+  labs(x="Gross Income",y="Allowance") +
+  coord_cartesian(xlim=c(0,130700),ylim=c(0,11500),expand = FALSE) + 
+  scale_x_continuous(breaks = xAxisBreaks) + 
+  scale_y_continuous(breaks = yAxisBreaks) +
+  annotate("text",x=110000,y=11000,label="Personal Allowance")
+ggsave("plots/PersonalAllowance.png")
+
+#Generate the UK Income Tax Data Frame
+ukIncomeTaxDF <- ukIncomeTaxDataFrame()
 
 # Create graph to plot income tax
 # Set up plot axis
