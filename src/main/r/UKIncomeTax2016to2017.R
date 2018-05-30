@@ -97,11 +97,11 @@ employeesNationalInsurance <- function(income){
 #' employersNationalInsurance()
 employersNationalInsurance <- function(income){
   secondaryThreshold <- 676 * 12
-  insurance <- 0
+  rate = 0.138
   if (income > secondaryThreshold){
-    insuranceIncomeAtEmployerRate <- income - secondaryThreshold 
-    insurance <- insurance + insuranceIncomeAtEmployerRate * (13.8/113.8) #To factor this into incomes.
-  }
+    insurance <- (income - secondaryThreshold)*rate 
+  } else
+    insurance <- 0
   insurance
 }
 
@@ -117,16 +117,29 @@ nationalInsurance <- function(income){
   employeesNationalInsurance(income) + employersNationalInsurance(income)
 }
 
-#' The Income Net Of National Insurance Function
+
+#' The Income Net Of Employees National Insurance Function
 #'
 #' This function determines the total level of national insurance contributions for a given income.
 #' @param income The gross income of the person.
 #' @keywords uk national insurance employer
 #' @export
 #' @examples
-#' incomeNetOfNationalInsurance()
-incomeNetOfNationalInsurance <- function(income){
-  income - nationalInsurance(income)
+#' incomeNetOfEmployeesNationalInsurance()
+incomeNetOfEmployeesNationalInsurance <- function(income){
+  income - employeesNationalInsurance(income)
+}
+
+#' The Income Net Of National Insurance and Income Tax Function
+#'
+#' This function determines the total level of national insurance contributions for a given income.
+#' @param income The gross income of the person.
+#' @keywords uk national insurance employer
+#' @export
+#' @examples
+#' incomeNetOfNationalInsuranceAndIncomeTax()
+incomeNetOfNationalInsuranceAndIncomeTax <- function(income){
+  income - employeesNationalInsurance(income) - incomeTax(income)
 }
 
 # TODO: Tax Credits
@@ -139,11 +152,12 @@ incomeNetOfNationalInsurance <- function(income){
 #' 2) personal allowance
 #' 3) incomeTax
 #' 4) incomeNetOfIncomeTax
-#' 5) nationalInsurance
-#' 6) incomeNetOfNationalInsurance
-#' 7) incomeNetOfNationalInsuranceAndIncomeTax
-#' 8) taxCredits
-#' 9) netIncome
+#' 5) employeesNationalInsurance
+#' 6) employersNationalInsurance
+#' 7) incomeNetOfEmployeesNationalInsurance
+#' 8) incomeNetOfNationalInsuranceAndIncomeTax
+#' 9) taxCredits
+#' 10) netIncome
 #' @param from The starting point for the gross income vector of the data frame. Defaults to 1.
 #' @param to The ending point of the gross income vector of the data frame. Defaults to 50001.
 #' @param by The increments of the gross income vector of the data frame. Defaukts to 1000.)
@@ -156,17 +170,19 @@ ukIncomeTaxDataFrame <- function(from=1,to=50001,by=1000) {
   personalAllowance <- sapply(grossIncome,personalAllowance)
   incomeTax <- sapply(grossIncome,incomeTax)
   incomeNetOfIncomeTax <- sapply(grossIncome,incomeNetOfIncomeTax)
-  nationalInsurance <- grossIncome
-  incomeNetOfNationalInsurance <- grossIncome
-  incomeNetOfNationalInsuranceAndIncomeTax <- grossIncome
+  employeesNationalInsurance <- sapply(grossIncome,employeesNationalInsurance)
+  employersNationalInsurance <- sapply(grossIncome,employersNationalInsurance)
+  incomeNetOfEmployeesNationalInsurance <- sapply(grossIncome,incomeNetOfEmployeesNationalInsurance)
+  incomeNetOfNationalInsuranceAndIncomeTax <- sapply(grossIncome,incomeNetOfNationalInsuranceAndIncomeTax)
   taxCredits <- grossIncome
   netIncome <- grossIncome
   data.frame(grossIncome,
              personalAllowance,
              incomeTax,
              incomeNetOfIncomeTax,
-             nationalInsurance,
-             incomeNetOfNationalInsurance,
+             employeesNationalInsurance,
+             employersNationalInsurance,
+             incomeNetOfEmployeesNationalInsurance,
              incomeNetOfNationalInsuranceAndIncomeTax,
              taxCredits,
              netIncome)

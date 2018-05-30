@@ -18,11 +18,11 @@ test_that('incomeTax function produces expected values',{
   expect_equal(incomeTax(21000),2000)
   # Test data from calculator here: http://iknowtax.com/2016/
   expect_equal(incomeTax(24000),2600)
-  expect_equal(incomeTax(43000)-6400)
-  expect_equal(incomeTax(55000)-11200)
-  expect_equal(incomeTax(120000)-41200)
-  expect_equal(incomeTax(200000)-76100)
-  expect_equal(incomeTax(500000)-211100)
+  expect_equal(incomeTax(43000),6400)
+  expect_equal(incomeTax(55000),11200)
+  expect_equal(incomeTax(120000),41200)
+  expect_equal(incomeTax(200000),76100)
+  expect_equal(incomeTax(500000),211100)
 })
 
 test_that('incomeNetOfIncomeTax function produces expected values',{
@@ -30,24 +30,32 @@ test_that('incomeNetOfIncomeTax function produces expected values',{
   expect_equal(incomeNetOfIncomeTax(21000),19000)
 })
 
-test_that('bifitProportionTaxPaid function produces expected values',{
-  expect_equal(bifitProportionTaxPaid(10400),0)
-  expect_equal(bifitProportionTaxPaid(5000,1000,0.2),0)
-})
-
 test_that('employeesNationalInsurance function produces expected values',{
-  # Test data from calculator here: http://iknowtax.com/2016/
-  expect_true(abs(employeesNationalInsurance(12000)-472.8) < 1)
-  expect_true(abs(employeesNationalInsurance(24000)-1912.8) < 1)
-  # Test data from:
-  # https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/634930/nic_sp_toolkit_2016-17.pdf
-  expect_true(abs(employeesNationalInsurance(23920)-1903.2) < 1)
+  # Test data based upon the following calcs
+  primaryThreshold <- 672
+  upperEarningsLimit <- 3583
+  mainRate <- 0.12
+  lowerRate <- 0.02
+  insuranceFor1000PerMonth <- (1000-primaryThreshold)*mainRate
+  insuranceFor12000PerYear <- insuranceFor1000PerMonth * 12
+  insuranceFor5000PerMonth <- (5000-upperEarningsLimit)*lowerRate + (3583-primaryThreshold)*mainRate
+  insuranceFor60000PerYear <- insuranceFor5000PerMonth * 12
+  #Tests
+  expect_equal(employeesNationalInsurance(12000),insuranceFor12000PerYear)
+  expect_equal(employeesNationalInsurance(60000),insuranceFor60000PerYear)
 })
 
 test_that('employersNationalInsurance function produces expected values',{
-  # Test data from:
-  # https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/634930/nic_sp_toolkit_2016-17.pdf
-  expect_true(abs(employersNationalInsurance(23920)-2181.5) < 1)
+  # Test data based upon the following calcs:
+  secondaryThreshold <- 676
+  rate <- 0.138
+  insuranceFor1000PerMonth <- (1000-secondaryThreshold)*rate
+  insuranceFor12000PerYear <- insuranceFor1000PerMonth * 12
+  insuranceFor5000PerMonth <- (5000-secondaryThreshold)*rate
+  insuranceFor60000PerYear <- insuranceFor5000PerMonth * 12
+  #Tests
+  expect_equal(employersNationalInsurance(12000),insuranceFor12000PerYear)
+  expect_equal(employersNationalInsurance(60000),insuranceFor60000PerYear)
 })
 
 test_that('nationalInsurance function produces expected values',{
@@ -56,6 +64,22 @@ test_that('nationalInsurance function produces expected values',{
     employeesNationalInsurance(12000) + employersNationalInsurance(12000))
 })
 
+test_that('incomeNetOfEmployeesNationalInsurance function produces expected values',{
+  income <- 12000
+  expect_equal(
+    incomeNetOfEmployeesNationalInsurance(income),
+    income -
+      employeesNationalInsurance(12000))
+})
+
+test_that('incomeNetOfNationalInsuranceAndIncomeTax function produces expected values',{
+  income <- 12000
+  expect_equal(
+    incomeNetOfNationalInsuranceAndIncomeTax(income),
+    income - 
+      employeesNationalInsurance(income) -
+      incomeTax(income))
+})
 
 test_that('ukIncomeTaxDataFrame function has the correct shape',{
   incomeTaxDf <- ukIncomeTaxDataFrame()
@@ -63,8 +87,9 @@ test_that('ukIncomeTaxDataFrame function has the correct shape',{
   expect_length(incomeTaxDf$personalAllowance,51)
   expect_length(incomeTaxDf$incomeTax,51)
   expect_length(incomeTaxDf$incomeNetOfIncomeTax,51)
-  expect_length(incomeTaxDf$nationalInsurance,51)
-  expect_length(incomeTaxDf$incomeNetOfNationalInsurance,51)
+  expect_length(incomeTaxDf$employeesNationalInsurance,51)
+  expect_length(incomeTaxDf$employersNationalInsurance,51)
+  expect_length(incomeTaxDf$incomeNetOfEmployeesNationalInsurance,51)
   expect_length(incomeTaxDf$incomeNetOfNationalInsuranceAndIncomeTax,51)
   expect_length(incomeTaxDf$taxCredits,51)
   expect_length(incomeTaxDf$netIncome,51)
@@ -76,6 +101,12 @@ test_that('ukIncomeDataFrame function produces correct values',{
   expect_equal(incomeTaxDf$personalAllowance[41],personalAllowance(incomeTaxDf$grossIncome[40]))
   expect_equal(incomeTaxDf$incomeTax[35],incomeTax(incomeTaxDf$grossIncome[35]))
   expect_equal(incomeTaxDf$incomeNetOfIncomeTax[20],incomeNetOfIncomeTax(incomeTaxDf$grossIncome[20]))
+  expect_equal(incomeTaxDf$employeesNationalInsurance[35],
+               employeesNationalInsurance(incomeTaxDf$grossIncome[35]))
+  expect_equal(incomeTaxDf$employersNationalInsurance[35],
+               employersNationalInsurance(incomeTaxDf$grossIncome[35]))
+  expect_equal(incomeTaxDf$incomeNetOfNationalInsuranceAndIncomeTax[35],
+               incomeNetOfNationalInsuranceAndIncomeTax(incomeTaxDf$grossIncome[35]))
   # expect_equal(incomeTaxDf$nationalInsurance[1],1)
   # expect_equal(incomeTaxDf$incomeNetOfNationalInsurance[1],1)
   # expect_equal(incomeTaxDf$incomeNetOfNationalInsuranceAndIncomeTax[1],1)
