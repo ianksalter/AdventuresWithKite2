@@ -64,8 +64,8 @@ ggplot(ukIncomeTaxDF) +
   scale_x_continuous(breaks = xAxisBreaks) + 
   scale_y_continuous(breaks = yAxisBreaks) +
   annotate("text",x=145000,y=104500,label="Income Net of Income Tax") +
-  annotate("text",x=145000,y=156000,label="No Intervention")
-ggsave("plots/IncomeNetofIncomeTaxVsNoIntervention.png")
+  annotate("text",x=145000,y=156000,label="Gross Income")
+ggsave("plots/GrossIncomeLessIncomeTax.png")
 
 
 # Create graph to plot employees national insurance
@@ -107,8 +107,8 @@ ggplot(ukIncomeTaxDF) +
   scale_x_continuous(breaks = xAxisBreaks) + 
   scale_y_continuous(breaks = yAxisBreaks) +
   annotate("text",x=135000,y=104500,label="Income Net of National Insurance") +
-  annotate("text",x=145000,y=156000,label="No Intervention")
-ggsave("plots/IncomeNetofEmployeesNIVsNoIntervention.png")
+  annotate("text",x=145000,y=156000,label="Gross Income")
+ggsave("plots/GrossIncomeLessEmployeesNI.png")
 
 
 # Create graph to plot income net of income tax employees national insurance vs no intervention
@@ -132,8 +132,8 @@ ggplot(ukIncomeTaxDF) +
   geom_label(x=135000,y=104500,label="Income Tax") +
   geom_label(x=140000,y=75000,label="Employees National Insurance") +
   annotate("text",x=134000,y=64500,label="Income Net of Tax and National Insurance") +
-  annotate("text",x=145000,y=156000,label="No Intervention")
-ggsave("plots/IncomeNetofTaxAndEmployeesNIVsNoIntervention.png")
+  annotate("text",x=145000,y=156000,label="Gross Income")
+ggsave("plots/GrossIncomeLessTaxAndEmployeesNI.png")
 
 # Create graph to plot employers national insurance
 # Set up plot axis

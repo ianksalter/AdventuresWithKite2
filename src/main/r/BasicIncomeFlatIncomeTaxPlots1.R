@@ -57,7 +57,7 @@ ggplot(bifitDf) +
   annotate("text",x=40000,y=31100,label="BIFIT (5200, 0.5) = Basic Income (5200) + Flat Tax (0.5)")
 ggsave("plots/Bifit.png")
 
-# Create graph of bifit income against no intervention
+# Create graph of bifit income aganst no intervention
 # make more y axis lables
 yAxisBreaks <- c(0,1,2,3,4,5,6,7,8,9,10)*5000
 #create plot
