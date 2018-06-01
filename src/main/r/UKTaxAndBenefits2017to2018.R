@@ -110,6 +110,8 @@ employersNationalInsurance <- function(income){
 }
 
 # Universal Credit Constants for 2017/2018
+# Data from:
+# https://revenuebenefits.org.uk/universal-credit/guidance/entitlement-to-uc/calculating-universal-credi
 ucMaximumAmount <- 371.8 * 12
 ucHigherWorkAllowance <- 0
 ucEarnedTaper <- 0.63
