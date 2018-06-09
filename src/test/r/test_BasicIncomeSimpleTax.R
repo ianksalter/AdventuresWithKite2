@@ -1,4 +1,4 @@
-# Unit tests for the functions in the file BasicIncomeFlatIncomeTax.r
+# Unit tests for the functions in the file BasicIncomeSimpleTax.r
 
 source("src/main/r/BasicIncomeSimpleTax.r")
 
