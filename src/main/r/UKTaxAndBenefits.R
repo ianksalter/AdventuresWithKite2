@@ -369,10 +369,10 @@ TaxAndBenefits <-R6Class("TaxAndBenefits",
     #' 7) universalCreditUnearned - assumes all income is unearned
     #' 9) finalIncomeEarned - assumes all income is earned
     #' 10) finalIncomeUnearned - assumes all income is unearned
-    #' @param from The initial earned income of the person.
-    #' @param to The initial earned income of the person.
-    #' @param by The initial unearned income of the person.
-    #' amount()
+    #' @param from The first point of initialIncome.
+    #' @param to The final point of the initial Income in the frame.
+    #' @param by The incriments by which initial income is increased in the frame.
+    #' dataFrame()
     dataFrame = function(from=1,to=50001,by=1000){
       initialIncome <- seq(from,to,by)
       personalAllowance <- sapply(initialIncome,self$incomeTax$personalAllowance$amount)
@@ -414,52 +414,3 @@ taxAndBenefits2015 <- TaxAndBenefits$new(
   nationalInsurance = nationalInsurance2015,
   universalCredit = universalCredit2015
 )
-
-
-
-
-
-
-
-
-#' The UK Income Tax Data Frame function
-#'
-#' This function creates a data frame with the following columns
-#' 1) initialIncome
-#' 2) personalAllowance
-#' 3) incomeTax
-#' 4) employeesNationalInsurance
-#' 5) employersNationalInsurance
-#' 6) universalCreditEarned - assumes all income is earned
-#' 7) universalCreditUnearned - assumes all income is unearned
-#' 9) finalIncomeEarned - assumes all income is earned
-#' 10) finalIncomeUnearned - assumes all income is unearned
-#' @param from The starting point for the gross income vector of the data frame. Defaults to 1.
-#' @param to The ending point of the gross income vector of the data frame. Defaults to 50001.
-#' @param by The increments of the gross income vector of the data frame. Defaukts to 1000.)
-#' @keywords income tax, national insurance, tax credit
-#' @export
-#' @examples
-#' ukIncomeTaxDataFrame()
-ukIncomeTaxDataFrame <- function(from=1,to=50001,by=1000) {
-  initialIncome <- seq(from,to,by)
-  personalAllowance <- sapply(initialIncome,personalAllowance)
-  incomeTax <- sapply(initialIncome,incomeTax)
-  employeesNationalInsurance <- sapply(initialIncome,employeesNationalInsurance)
-  employersNationalInsurance <- sapply(initialIncome,employersNationalInsurance)
-  universalCreditEarned <- sapply(initialIncome,universalCredit)
-  universalCreditUnearned <- sapply(initialIncome,function(income){universalCredit(0,income)})
-  finalIncomeEarned <-
-    initialIncome + universalCreditEarned - incomeTax - employeesNationalInsurance
-  finalIncomeUnearned <-
-    initialIncome + universalCreditUnearned - incomeTax 
-  data.frame(initialIncome,
-             personalAllowance,
-             incomeTax,
-             employeesNationalInsurance,
-             employersNationalInsurance,
-             universalCreditEarned,
-             universalCreditUnearned,
-             finalIncomeEarned,
-             finalIncomeUnearned)
-}
