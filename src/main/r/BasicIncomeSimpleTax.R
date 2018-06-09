@@ -1,3 +1,4 @@
+library(R6)
 #' The Basic Income Simple Tax class
 #'
 #' This class describes the notion of a Basic Income Simple Tax (BIST).
