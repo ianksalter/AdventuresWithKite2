@@ -1,1 +1,1 @@
-A small file to test branching in git
+A small file to test branching in git. More text added for further test.
