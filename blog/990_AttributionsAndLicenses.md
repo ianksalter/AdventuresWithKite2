@@ -59,4 +59,3 @@ The source for this work is available on GitHub at [https://github.com/ianksalte
 
 * **Freedom and Equality** Original image by the author.
 
-  
