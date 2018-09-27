@@ -1,4 +1,6 @@
 
+Maybe add stiuff from Soller
+
 
 Start 5 boats -> sunsail boat
 

@@ -16,6 +16,9 @@ Club  Rakel and Tamara and a couple of lads whose names I never do catch.
 
 Saturday - San Roche Ecology club
 
+ECOLOGY ARGUMENT -> needs working up.
+
+
 Sunday recovery, Morrisons and a roast dinner. 
 
 Monday chandlers, gas and internet    I rush about while the boys clean the boat.

@@ -7,3 +7,7 @@ I'm soon at barcelona Saints and on the train back to Tarrgona. This has all bee
 Low sun shines into the train as we head south bask the way I sailed yesterday. Industry gives way to port and then open countryside
 
 Cabin shows train speed 150 kph open's out to the sea at valabona into tunnels with occasional glimpses of the sea 
+
+
+
+Fit in the Sicilie Isles narrative and link to the the FREEDOM ARGUMENT

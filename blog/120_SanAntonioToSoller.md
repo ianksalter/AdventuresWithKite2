@@ -1,5 +1,11 @@
 
 
+
+
+Maybe add the stuff from San Antonio
+
+NEED STUFF re affordability argument spread accross this.
+
 Stuff about engine checks and raw water
 
 Up until now leaving med moorings has been easy just point Kite forward with engines on remove the forward lines, remove one aft line get the last line down to a turn - flick the engine into neutral to remove the final line and then motor out between the boats.

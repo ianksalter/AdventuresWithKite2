@@ -28,6 +28,8 @@ Half steering.
 
 Head out to watch the football and catch the end of the Bayen Real Madrid game.
 
+WALKING BACK Thinking about the Sugarscape argument and another loo tme or interspace the arguments.....
+
 
 ![](https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png)
 [Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License](href="http://creativecommons.org/licenses/by-nc-sa/4.0/).

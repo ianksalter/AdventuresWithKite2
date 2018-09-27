@@ -14,7 +14,7 @@ The eastern med is notorious for having no wind or too much wind, or if its the 
 
 As the sun gets lower I make a stew which we eat while witnessing a magnificent sunset. I witness a lighthouse flashing which we identify as XXX because it has 4 flashes in a 20 second period. Riff disapears below and comes back with a bar of salted caramel chocolate. I suggest that it mght be time for a rum ration. This used to be a navel tradition (see wikipedia, mention my dad). Riff and I sit nibbling the chocolate and sipping the rum as the stars come out around us. Feeling warmed by both the chocolate and the rum I head down for a sleep and Riff takes first watch.
 
-THE SUGARSCAPE ARGUMENT
+TECHNOLOGY AND CHANGE ARGUMENT
 
 I come up to take my watch and riff heads down to sleep. There is a parade of big ships passing on our starboard side. Logial due to traffic seperation systems. As a smaller vessel we are travelling through the inshore traffic zones at both capes so are well to the inside of these vessels. A Nic Warren mix is almost at the end but I restart it. 
 
