@@ -59,4 +59,27 @@ The source for this work is available on GitHub at [https://github.com/ianksalte
 
 * **Freedom and Equality** Original image by the author.
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+## BIST: Environmental Argument ##
+
+* **Circular flow of income: ** Image sourced from [Wikipedia](https://en.m.wikipedia.org/wiki/Circular_flow_of_income#/media/File%3ACircular_flow_of_income_and_expenditure.jpg) original image by Bureau of Economic Analysis (BEA), U.S. Department of Commerce, October 2014. A Public Domain image.
   
