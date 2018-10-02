@@ -1,6 +1,6 @@
 # Appendix 1: Basic Income Flat Tax - BIST #
 
-In the dead of night I sit on Kite with some graph paper and draw a line across the page.
+In the dead of night I sit on Kite with some graph paper an  d draw a line across the page.
 
 ![*Income without Tax or Benefit*](../plots/IncomeWithoutTaxOrBenefit.png "Income without Tax or Benefit")
 
