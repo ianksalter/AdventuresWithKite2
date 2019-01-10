@@ -22,9 +22,9 @@ ggplot(bistDf,aes(x=initialIncome)) +
     geom_ribbon(aes(x=initialIncome,ymin=finalIncome,ymax=initialIncome),fill="grey90") +
     geom_line(aes(y=finalIncome)) +
     geom_line(aes(y=initialIncome),linetype="dotted") +
-    geom_hline(yintercept=3400,linetype="dashed",color="grey60") +
-    annotate("text",x=1500 , y=4400, label="Subsistence",size=3,color="grey60") +
+    geom_hline(yintercept=2400,linetype="dashed",color="grey60") +
+    annotate("text",x=3000 , y=3400, label="Subsistence",size=5,color="grey60") +
     geom_hline(yintercept=15400,linetype="dashed",color="grey60") +
-    annotate("text",x=6500 , y=16400, label="Sustainable Footprint (1 global hectare / world polulation)",size=3,color="grey60") +
+    annotate("text",x=11000 , y=16400, label="Sustainable Footprint (1 global hectare / world polulation)",size=5,color="grey60") +
     labs(x="Initial Income",y="Final Income")
 ggsave("plots/BISTSubsistanceAndEcologicalFootprint.png")

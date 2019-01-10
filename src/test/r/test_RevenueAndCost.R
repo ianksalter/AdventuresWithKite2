@@ -1,6 +1,6 @@
 # Unit tests for the functions in the file RevenueAndCost.r
 
-source("src/main/r/RevenueAndCost.r")
+source("src/main/r/RevenueAndCost.R")
 
 library(testthat)
 
@@ -20,11 +20,18 @@ test_that('RevenueAndCost$amount method produces expected values',{
 })
 
 test_that('RevenueAndCost$overallAmount method produces expected values',{
-  testRevenueAndCost <- RevenueAndCost$new(
+  testRevenueAndCost1 <- RevenueAndCost$new(
     amountFunction = function(income){1},
     population = 1,
     mean = 1,
     standardDeviation = 1
   )
-  expect_equal(testRevenueAndCost$overallAmount()$value,1)
+  testRevenueAndCost2 <- RevenueAndCost$new(
+    amountFunction = function(income){2},
+    population = 1,
+    mean = 1,
+    standardDeviation = 1
+  )
+  expect_equal(testRevenueAndCost1$overallAmount()$value,1)
+  expect_equal(testRevenueAndCost2$overallAmount()$value,2)
 })

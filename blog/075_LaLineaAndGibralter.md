@@ -18,6 +18,12 @@ Saturday - San Roche Ecology club
 
 ECOLOGY ARGUMENT -> needs working up.
 
+Note can use the Kate Rayworth stuff here:
+https://www.bbc.com/ideas/videos/could-circular-economics-fix-the-planet/p06j8f32?playlist=is-there-a-better-way
+
+At some point also look at a better understanding of national identitiy: Move this to another section when writing.
+https://www.bbc.com/ideas/videos/do-we-need-a-new-understanding-of-national-identit/p06v9cbj
+
 
 Sunday recovery, Morrisons and a roast dinner. 
 

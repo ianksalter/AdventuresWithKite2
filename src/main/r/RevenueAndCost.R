@@ -2,7 +2,7 @@ library(R6)#' The Revenue and Cost class
 #'
 #' The Revenue and Cost class calculates revenue and cost for a tax
 #' or benefit.
-#' @field amount Single varaible function for which the cost or benefit is being calculated.
+#' @field amountFunction Single varaible function for which the cost or benefit is being calculated.
 #' @field population The no of people in the population who pay the tax or are entitled to the benefit.
 #' @field mean The mean of the population income for a log normal distribution
 #' @field standardDeviation The standard deviation of the population income for a log normal distribution
@@ -37,7 +37,7 @@ RevenueAndCost <-R6Class("RevenueAndCost",
    #' from integrating the amount function to access the amount use
    #' overallAmount()$value
    #' overallAmount()
-   overallAmount = function(income){
+   overallAmount = function(){
      integrate(self$amount,lower=0,upper=Inf)
    },
    #' The logNormalPDF method
